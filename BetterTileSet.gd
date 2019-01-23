@@ -49,7 +49,7 @@ func tile_set_name(i: int, name):
 
 	tile_names[name] = i
 
-func tile_by_name(name) -> int:
+func find_tile_by_name(name) -> int:
 	return tile_names[name]
 
 func finalize():
