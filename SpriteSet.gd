@@ -1,4 +1,4 @@
-class_name BetterTileSet
+class_name SpriteSet
 
 var texture: Texture
 

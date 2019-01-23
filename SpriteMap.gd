@@ -1,11 +1,11 @@
 extends Sprite
 
-class_name BetterTileMap
+class_name SpriteMap
 
 const SHADER = preload("./tilemap.shader")
 
-var _tile_set : BetterTileSet
-var tile_set : BetterTileSet setget set_tileset, get_tileset
+var _tile_set : SpriteSet
+var tile_set : SpriteSet setget set_tileset, get_tileset
 
 # Currently, tile_size must equal the size of tiles in the TileSet. This may be fixed in the future.
 export (int) var tile_size : int = 32
@@ -43,9 +43,9 @@ func _process(delta):
 
 		self.cells_tex.set_data(self.cells)
 
-func set_tileset(ts: BetterTileSet):
+func set_tileset(ts: SpriteSet):
 	if ts.texture == null:
-		printerr("Tileset has not been finalized, yet!")
+		printerr("SpriteSet has not been finalized, yet!")
 		return
 
 	self._tile_set = ts
