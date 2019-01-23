@@ -2,7 +2,7 @@ extends Sprite
 
 class_name BetterTileMap
 
-const SHADER = preload("res://scripts/tilemap/tilemap.shader")
+const SHADER = preload("./tilemap.shader")
 
 var _tile_set : BetterTileSet
 var tile_set : BetterTileSet setget set_tileset, get_tileset
