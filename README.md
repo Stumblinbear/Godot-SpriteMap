@@ -8,6 +8,6 @@ It should be almost a drop-in replacement for the base TileMap and TileSet (howe
 Benchmark | Tiles | FPS
 --- | --- | ---
 Godot TileMap | 4096 | +50+
-Godot TileMap | 65536 | 600+
+BetterTileMap | 65536 | 600+
 
 `Benchmarks run on Intel Integrated Graphics`
