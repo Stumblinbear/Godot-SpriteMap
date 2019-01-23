@@ -58,6 +58,7 @@ func set_tileset(ts: BetterTileSet):
 func get_tileset():
 	return self._tile_set
 
+# If Godot ever adds support for passing float or int arrays to shaders, then this can be refactored to be much cleaner
 func set_cell(x: int, y: int, i: int):
 	self.cells_changed = true
 
