@@ -42,8 +42,6 @@ func _process(delta):
 		self.cells_changed = false
 
 		self.cells_tex.set_data(self.cells)
-		
-		self.cells.save_png("test2.png")
 
 func set_tileset(ts: BetterTileSet):
 	if ts.texture == null:
